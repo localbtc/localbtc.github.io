@@ -13,7 +13,6 @@
     </head>
     <body>
         <h1>Weekly Bitcoin Trading Volume &mdash; Nigerian Naira</h1>
-        <em>Source: Localbitcoins.com</em>
         <div id="container" style="height: 450px"></div>
         <small>TipJar: <a href="bitcoin:1TimbaZj9kttHJuwn4TddyZFU4zxP4tGM">1TimbaZj9kttHJuwn4TddyZFU4zxP4tGM</a></small>
         <script src="jquery.min.js"></script>
@@ -34,6 +33,11 @@
                             chart: {
                                 alignTicks: true,
                                 animation: false
+                            },
+                            credits: {
+                                enabled: true,
+                                href: 'https://localbitcoins.com/country/NG',
+                                text: 'Source: Localbitcoins'
                             },
                             yAxis: [{
                                 labels: {
