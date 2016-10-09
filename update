@@ -20,4 +20,4 @@ df.to_hdf("localbitcoins.h5", "trades", mode="w")
 
 df['volume'] = df.amount * df.price
 df['trades'] = np.array([1] * len(df))
-df[['volume', 'trades']].round(2).resample('1w-sat').sum().fillna(0).to_csv('localbitcoins-ngn.csv')
+df[['volume', 'trades', 'amount']].round(2).resample('1w-sat').sum().fillna(0).to_csv('localbitcoins-ngn.csv')
