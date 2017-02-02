@@ -16,7 +16,7 @@ while True:
 
 df.reset_index(drop=True, inplace=True)
 df.index = df.date
-df.to_hdf("localbitcoins.h5", "trades", mode="w")
+df.to_hdf("localbitcoins.h5", "trades", mode="w", format="table")
 
 df['volume'] = df.amount * df.price
 df['trades'] = np.array([1] * len(df))
