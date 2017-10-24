@@ -4,4 +4,4 @@ pandas==0.18.1
 python-dateutil==2.5.3
 pytz==2016.6.1
 six==1.10.0
-tables==3.2.3.1
+tables==3.4.2
